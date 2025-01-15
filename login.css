@@ -1,0 +1,13 @@
+/* Apply this background only for the login page */
+.login-page {
+    background-image: url('pizzaa.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  

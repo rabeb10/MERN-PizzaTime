@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Monserrat:wght@600&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Monserrat',sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav{
+  background-color: aquamarine;
+}
+.navbar-brand{
+  color:black !important;
+}
+.nav-link {
+  font-size :'30px';
+  font-weight: bold;
+  color: blue;
+}
+h1{
+  font-size: medium;
+  color: black;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}

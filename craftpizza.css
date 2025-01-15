@@ -1,0 +1,127 @@
+/* Container for the CraftPizza page */
+.craftpizza-container {
+    font-family: Arial, sans-serif;
+    padding: 150px 20px; /* Increase padding for more space */
+    background-image: url('pizzaa.jpg'); /* Replace with your actual image URL */
+    background-size: cover; /* Ensures the background image fully covers the container */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    min-height: 100vh; /* Ensure the background covers the entire height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the content to the top */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Title for "Craft Your Pizza" inside the selection zone */
+.pizza-petes-logo {
+    font-size: 10rem; /* Even bigger font size */
+    font-weight: bold;
+    color: red; /* Red color */
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Ensure it's centered */
+    font-family: 'Arial', sans-serif; /* Use same font for consistency */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect to the text for more impact */
+}
+
+/* Selection Zone (white border around it) */
+.selection-zone {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background */
+    padding: 100px; /* Increase padding for more space */
+    border-radius: 15px;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+    gap: 30px;
+    width: 50%; /* Increase width to make the zone bigger */
+    margin: auto;
+    max-width: 1400px; /* Max width of selection zone */
+    font-size: 2rem; /* Increase font size for larger text */
+    padding: 30px; /* Increase padding for bigger dropdown */
+    width: 60%; /* Adjust width to make dropdown less wide */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    background-color: #fff;
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Spacing between dropdowns */
+}
+select {
+    font-size: 20px; /* Adjust font size */
+    width: 200px; /* Set width to a reasonable value */
+    padding: 10px; /* Add padding for better spacing */
+  }
+  
+  label {
+    font-size: 20px; /* Adjust label font size to make it match */
+  }
+  
+/* Add Pizza Pete's on the top right of the page */
+.pizza-petes-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF6347; /* Tomato red */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect to the text for more impact */
+}
+
+/* Each section (Method, Size, Crust, Toppings) */
+.selection-zone div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 2rem; /* Larger heading */
+    margin-bottom: 15px;
+    color: #333; /* Ensure heading text is readable */
+}
+
+/* Label styles for radio/checkbox */
+label {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #555; /* Ensure label text is readable */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+/* Make it look better on smaller screens */
+@media (max-width: 600px) {
+    .selection-zone{
+        padding: 60px; /* Adjust padding for smaller screens */
+        width: 90%; /* Allow more space on smaller screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .pizza-card {
+        width: 100%; /* Adjust pizza card width on small screens */
+    }
+}
+
+/* Button Styling for Validate Order */
+.validate-order-btn {
+    background-color: #FF6347; /* Tomato color */
+    color: white;
+    padding: 20px 40px;
+    font-size: 2rem; /* Larger font size for visibility */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px; /* Space above the button */
+    transition: background-color 0.3s ease;
+}
+
+.validate-order-btn:hover {
+    background-color: #e55337; /* Darker shade on hover */
+}

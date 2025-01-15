@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rosybrown;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  height: 80px;
+}
+
+.navbar-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* App Title */
+.app-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+/* Pizza Menu Styling */
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pizza-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.pizza-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pizza-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pizza-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Pizza Details */
+.pizza-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pizza-variants,
+.pizza-prices {
+  flex: 1;
+  text-align: center;
+}
